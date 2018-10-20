@@ -1,10 +1,10 @@
-# TimeXt-C# - master branch
+# TimeXt-C# - develop branch
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 <a target="_blank" href="https://www.paypal.me/GuepardoApps" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-blue.svg" /></a>
 
-[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/TimeXt-CSharp/blob/master/releases/0.1.0.181020/)
-[![Version](https://img.shields.io/badge/version-v0.1.0.181020-blue.svg)](https://github.com/TimeXt/TimeXt-CSharp/tree/master/releases/0.1.0.181020/)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/TimeXt-CSharp/blob/develop/releases/0.1.0.181020/)
+[![Version](https://img.shields.io/badge/version-v0.1.0.181020-blue.svg)](https://github.com/TimeXt/TimeXt-CSharp/tree/develop/releases/0.1.0.181020/)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
@@ -74,4 +74,4 @@ var daysInYear = 365.Days().InYears;
 
 ## License
 
-TimeXt-C# is distributed under the MIT license. [See LICENSE](https://github.com/TimeXt/TimeXt-CSharp/blob/master/LICENSE.md) for details.
+TimeXt-C# is distributed under the MIT license. [See LICENSE](https://github.com/TimeXt/TimeXt-CSharp/blob/develop/LICENSE.md) for details.
