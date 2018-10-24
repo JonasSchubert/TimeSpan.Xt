@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeXt", "TimeXt\TimeXt.csproj", "{0408300E-51C7-419E-BD75-7293A9FE5D7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeXt.Test", "TimeXt.Test\TimeXt.Test.csproj", "{C4F0FCD6-FA49-4D96-82BD-C288506D60E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeXt.Test", "TimeXt.Test\TimeXt.Test.csproj", "{C4F0FCD6-FA49-4D96-82BD-C288506D60E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
