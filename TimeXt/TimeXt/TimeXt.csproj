@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>GuepardoApps (Jonas Schubert)</Authors>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.2.0</Version>
+    <Authors>Jonas Schubert</Authors>
     <Company>GuepardoApps</Company>
-    <Version>0.1.0</Version>
     <RepositoryType>GIT</RepositoryType>
     <RepositoryUrl>https://github.com/TimeXt/TimeXt-CSharp/</RepositoryUrl>
     <PackageProjectUrl>https://github.com/TimeXt/TimeXt-CSharp/</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/TimeXt/TimeXt-CSharp/blob/develop/LICENSE.md</PackageLicenseUrl>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Copyright>GuepardoApps (Jonas Schubert)</Copyright>
   </PropertyGroup>
 

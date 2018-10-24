@@ -1,149 +1,113 @@
-﻿using NUnit.Framework;
+﻿using FluentAssertions;
+using System;
+using Xunit;
 
 namespace TimeXt.Test
 {
-    [TestFixture]
     public class UnitTests
     {
-        [Test]
+        [Fact]
         public void AllComparisonsWorkShouldWorkAsExpected()
         {
-            Assert.AreEqual(2.Weeks(), 14.Days());
-            Assert.IsTrue(3.Weeks() > 20.9.Days());
-            Assert.IsTrue(4.Weeks() < 28.1f.Days());
-            Assert.AreNotEqual(2.Weeks(), 13.00.Days());
+            2.Weeks().Should().Be(14.Days());
+            2.Weeks().Should().NotBe(13.Days());
+            2.Weeks().Should().BeGreaterThan(13.99.Days());
+            2.Weeks().Should().BeLessThan(14.01.Days());
 
-            Assert.AreEqual(2.Days(), 48.Hours());
-            Assert.IsTrue(1.Days() > 23.9.Hours());
-            Assert.IsTrue(0.Days() < 0.1f.Hours());
-            Assert.AreNotEqual(2.Days(), 49.00.Hours());
+            2.Days().Should().Be(48.Hours());
+            2.Days().Should().NotBe(47.Hours());
+            2.Days().Should().BeGreaterThan(47.99.Hours());
+            2.Days().Should().BeLessThan(48.01.Hours());
 
-            Assert.AreEqual(2.Hours(), 120.Minutes());
-            Assert.IsTrue(3.Hours() > 179.9.Minutes());
-            Assert.IsTrue(5.Hours() < 300.1f.Minutes());
-            Assert.AreNotEqual(2.Hours(), 121.00.Minutes());
+            2.Hours().Should().Be(120.Minutes());
+            2.Hours().Should().NotBe(119.Minutes());
+            2.Hours().Should().BeGreaterThan(119.99.Minutes());
+            2.Hours().Should().BeLessThan(120.01.Minutes());
 
-            Assert.AreEqual(15.Minutes(), 900.Seconds());
-            Assert.IsTrue(30.Minutes() > 1799.9.Seconds());
-            Assert.IsTrue(45.Minutes() < 2700.1f.Seconds());
-            Assert.AreNotEqual(15.Minutes(), 899.00.Seconds());
+            2.Minutes().Should().Be(120.Seconds());
+            2.Minutes().Should().NotBe(119.Seconds());
+            2.Minutes().Should().BeGreaterThan(119.99.Seconds());
+            2.Minutes().Should().BeLessThan(120.01.Seconds());
 
-            Assert.AreEqual(10.Seconds(), 10000.MilliSeconds());
-            Assert.IsTrue(20.Seconds() > 19999.9.MilliSeconds());
-            Assert.IsTrue(30.Seconds() < 30000.1f.MilliSeconds());
-            Assert.AreNotEqual(10.Seconds(), 10010.00.MilliSeconds());
-
-            Assert.AreEqual(10.MilliSeconds(), 10000.MicroSeconds());
-            Assert.IsTrue(20.MilliSeconds() > 19999.9.MicroSeconds());
-            Assert.IsTrue(30.MilliSeconds() < 30000.1f.MicroSeconds());
-            Assert.AreNotEqual(10.MilliSeconds(), 10010.00.MicroSeconds());
-
-            Assert.AreEqual(10.MicroSeconds(), 10000.NanoSeconds());
-            Assert.IsTrue(20.MicroSeconds() > 19999.9.NanoSeconds());
-            Assert.IsTrue(30.MicroSeconds() < 30000.1f.NanoSeconds());
-            Assert.AreNotEqual(10.MicroSeconds(), 10010.00.NanoSeconds());
-
-            Assert.AreEqual(10.NanoSeconds(), 10000.PicoSeconds());
-            Assert.IsTrue(20.NanoSeconds() > 19999.9.PicoSeconds());
-            Assert.IsTrue(30.NanoSeconds() < 30000.1f.PicoSeconds());
-            Assert.AreNotEqual(10.NanoSeconds(), 10010.00.PicoSeconds());
+            2.Seconds().Should().Be(2000.Milliseconds());
+            2.Seconds().Should().NotBe(1999.Milliseconds());
+            2.Seconds().Should().BeGreaterThan(1999.Milliseconds());
+            2.Seconds().Should().BeLessThan(2001.Milliseconds());
         }
 
-        [Test]
+        [Fact]
         public void AllConversionsWorkShouldWorkAsExpected()
         {
-            Assert.IsTrue(4.Weeks().InDays == 28.0);
-            Assert.IsTrue(7.Days().InWeeks == 1.0);
-            Assert.IsTrue(2.5.Days().InHours == 60.0);
-            Assert.IsTrue(5.25.Hours().InMinutes == 315.0);
-            Assert.IsTrue(72.Hours().InDays == 3.0);
-            Assert.IsTrue(360.Minutes().InHours == 6.0);
-            Assert.IsTrue(15.5.Minutes().InSeconds == 930.0);
-            Assert.IsTrue(7200.Seconds().InHours == 2.0);
-            Assert.IsTrue(10800.Seconds().InDays == 0.125);
-            Assert.IsTrue(5.75.Seconds().InMilliSeconds == 5750.0);
-            Assert.IsTrue(5.75.MilliSeconds().InMicroSeconds == 5750.0);
-            Assert.IsTrue(5.75.MicroSeconds().InNanoSeconds == 5750.0);
-            Assert.IsTrue(5.75.NanoSeconds().InPicoSeconds == 5750.0);
+            4.Weeks().InDays().Should().Be(28);
+            7.Days().InWeeks().Should().Be(1);
+            2.5.Days().InHours().Should().Be(60);
+            5.25.Hours().InMinutes().Should().Be(315);
+            72.Hours().InDays().Should().Be(3);
+            360.Minutes().InHours().Should().Be(6);
+            15.5.Minutes().InSeconds().Should().Be(930);
+            7200.Seconds().InHours().Should().Be(2);
+            10800.Seconds().InDays().Should().Be(0.125);
+            5.75.Seconds().InMilliseconds().Should().Be(5750);
         }
 
-        [Test]
+        [Fact]
         public void PlusOperatorShouldWorkAsExpected()
         {
-            Assert.IsTrue(2.Weeks() + 7.Days() == 3.Weeks());
-            Assert.IsTrue(2.5.Days() + 12.Hours() == 3.Days());
-            Assert.IsTrue(2.25.Hours() + 45.Minutes() == 3.Hours());
-            Assert.IsTrue(2.25.Minutes() + 45.Seconds() == 3.Minutes());
-            Assert.IsTrue(2.25.Seconds() + 750.MilliSeconds() == 3.Seconds());
+            (2.Weeks() + 7.Days()).Should().Be(3.Weeks());
+            (2.5.Days() + 12.Hours()).Should().Be(3.Days());
+            (2.25.Hours() + 45.Minutes()).Should().Be(3.Hours());
+            (2.25.Minutes() + 45.Seconds()).Should().Be(3.Minutes());
+            (2.25.Seconds() + 750.Milliseconds()).Should().Be(3.Seconds());
         }
 
-        [Test]
+        [Fact]
         public void MinusOperatorShouldWorkAsExpected()
         {
-            Assert.IsTrue(2.Weeks() - 7.Days() == 1.Weeks());
-            Assert.IsTrue(2.5.Days() - 12.Hours() == 2.Days());
-            Assert.IsTrue(2.25.Hours() - 15.Minutes() == 2.Hours());
-            Assert.IsTrue(2.25.Minutes() - 15.Seconds() == 2.Minutes());
-            Assert.IsTrue(2.25.Seconds() - 250.MilliSeconds() == 2.Seconds());
+            (2.Weeks() - 7.Days()).Should().Be(1.Weeks());
+            (2.5.Days() - 12.Hours()).Should().Be(2.Days());
+            (2.25.Hours() - 15.Minutes()).Should().Be(2.Hours());
+            (2.25.Minutes() - 15.Seconds()).Should().Be(2.Minutes());
+            (2.25.Seconds() - 250.Milliseconds()).Should().Be(2.Seconds());
         }
 
-        [Test]
+        [Fact]
         public void MultiplicationOperatorShouldWorkAsExpected()
         {
-            Assert.IsTrue(2.Weeks() * 2 == 4.Weeks());
-            Assert.IsTrue(2.5.Days() * 3 == 7.5.Days());
-            Assert.IsTrue(2.25.Hours() * 4 == 10.Hours());
-            Assert.IsTrue(2.25.Minutes() * 4 == 10.Minutes());
-            Assert.IsTrue(2.25.Seconds() * 4 == 10.Seconds());
+            (2.Weeks() * 2.0).Should().Be(4.Weeks());
+            (2.5.Days() * 3.0).Should().Be(7.5.Days());
+            (2.25.Hours() * 4.0).Should().Be(9.Hours());
+            (2.25.Minutes() * 4.0).Should().Be(9.Minutes());
+            (2.25.Seconds() * 4.0).Should().Be(9.Seconds());
         }
 
-        [Test]
+        [Fact]
         public void DivisionOperatorShouldWorkAsExpected()
         {
-            Assert.IsTrue(2.Weeks() / 2 == 1.Weeks());
-            Assert.IsTrue(7.5.Days() / 3 == 2.5.Days());
-            Assert.IsTrue(4.0.Hours() / 4 == 1.Hours());
-            Assert.IsTrue(4.0.Minutes() / 4 == 1.Minutes());
-            Assert.IsTrue(4.0.Seconds() / 4 == 1.Seconds());
+            (2.Weeks() / 2.0).Should().Be(1.Weeks());
+            (7.5.Days() / 3.0).Should().Be(2.5.Days());
+            (4.0.Hours() / 4.0).Should().Be(1.Hours());
+            (4.0.Minutes() / 4.0).Should().Be(1.Minutes());
+            (4.0.Seconds() / 4.0).Should().Be(1.Seconds());
         }
 
-        [Test]
-        public void IncrementOperatorShouldWorkAsExpected()
-        {
-            var weeks = 2.Weeks();
-            Assert.IsTrue(++weeks == 3.Weeks());
-
-            var days = 3.Days();
-            Assert.IsTrue(++days == 4.Days());
-
-            var hours = 12.Hours();
-            Assert.IsTrue(++hours == 13.Hours());
-        }
-
-        [Test]
-        public void DecrementOperatorShouldWorkAsExpected()
-        {
-            var weeks = 2.Weeks();
-            Assert.IsTrue(--weeks == 1.Weeks());
-
-            var days = 3.Days();
-            Assert.IsTrue(--days == 2.Days());
-
-            var hours = 12.Hours();
-            Assert.IsTrue(--hours == 11.Hours());
-        }
-
-        [Test]
+        [Fact]
         public void CompareToShouldWorkAsExpected()
         {
-            Assert.IsTrue((55.NanoSeconds().CompareTo(60.NanoSeconds())) == 5000);
+            60.Weeks().CompareTo(55.Weeks()).Should().Be(1);
+            55.Weeks().CompareTo(60.Weeks()).Should().Be(-1);
         }
 
-        [Test]
-        public void ContainsShouldWorkAsExpected()
+        [Fact]
+        public void DateTimeOperatorShouldWorkAsExpected()
         {
-            Assert.IsTrue(60.NanoSeconds().Contains(55.NanoSeconds()));
-            Assert.IsFalse(55.NanoSeconds().Contains(60.NanoSeconds()));
+            var testDateTime = new DateTime(2018, 10, 24, 18, 23, 30, 500);
+
+            (testDateTime + 1.Weeks()).Should().Be(new DateTime(2018, 10, 31, 18, 23, 30, 500));
+            (testDateTime - 24.Days()).Should().Be(new DateTime(2018, 9, 30, 18, 23, 30, 500));
+            (testDateTime + 80.5.Hours()).Should().Be(new DateTime(2018, 10, 28, 2, 53, 30, 500));
+            (testDateTime - 15.25.Minutes()).Should().Be(new DateTime(2018, 10, 24, 18, 8, 15, 500));
+            (testDateTime + 45.75.Seconds()).Should().Be(new DateTime(2018, 10, 24, 18, 24, 16, 250));
+            (testDateTime - 15500.Milliseconds()).Should().Be(new DateTime(2018, 10, 24, 18, 23, 15, 0));
         }
     }
 }
