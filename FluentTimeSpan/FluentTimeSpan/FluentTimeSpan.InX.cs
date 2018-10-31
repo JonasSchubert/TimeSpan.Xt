@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace TimeXt
+namespace FluentTimeSpan
 {
-    public static partial class TimeSpanXt
+    public static partial class FluentTimeSpan
     {
         public static double InWeeks(this TimeSpan timeSpan)
         {

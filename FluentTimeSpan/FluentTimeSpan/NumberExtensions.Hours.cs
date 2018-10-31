@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TimeXt
+namespace FluentTimeSpan
 {
     public static partial class NumberExtensions
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace TimeXt
+namespace FluentTimeSpan
 {
-    public static partial class TimeSpanXt
+    public static partial class FluentTimeSpan
     {
         public const long TicksPerWeek = 7 * TimeSpan.TicksPerDay;
 
