@@ -2,7 +2,7 @@
 using System;
 using Xunit;
 
-namespace TimeXt.Test
+namespace FluentTimeSpan.Test
 {
     public class UnitTests
     {

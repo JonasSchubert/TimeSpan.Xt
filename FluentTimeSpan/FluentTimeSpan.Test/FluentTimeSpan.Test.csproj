@@ -4,6 +4,22 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <Version>0.3.0</Version>
+
+    <Authors>Jonas Schubert</Authors>
+
+    <Company>GuepardoApps</Company>
+
+    <Description>Unit tests for FluentTimeSpan</Description>
+
+    <Copyright>GuepardoApps (Jonas Schubert)</Copyright>
+
+    <PackageLicenseUrl>https://github.com/TimeXt/FluentTimeSpan-CSharp/blob/master/LICENSE.md</PackageLicenseUrl>
+
+    <PackageProjectUrl>https://github.com/TimeXt/</PackageProjectUrl>
+
+    <RepositoryUrl>https://github.com/TimeXt/FluentTimeSpan-CSharp/</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TimeXt\TimeXt.csproj" />
+    <ProjectReference Include="..\FluentTimeSpan\FluentTimeSpan.csproj" />
   </ItemGroup>
 
 </Project>
