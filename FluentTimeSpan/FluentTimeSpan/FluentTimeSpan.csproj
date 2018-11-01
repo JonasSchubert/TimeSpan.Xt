@@ -2,16 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.3.0</Version>
+    <Version>0.3.1</Version>
     <Authors>Jonas Schubert</Authors>
-    <Company>GuepardoApps</Company>
+    <Company>conplementAG</Company>
     <Description>Provides extensions for TimeSpan. Added new TimeValue Week.</Description>
     <Copyright>GuepardoApps (Jonas Schubert)</Copyright>
-    <PackageLicenseUrl>https://github.com/TimeXt/FluentTimeSpan-CSharp/blob/master/LICENSE.md</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/TimeXt/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/conplementAG/FluentTimeSpan/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/conplementAG/</PackageProjectUrl>
     <PackageIconUrl></PackageIconUrl>
-    <RepositoryUrl>https://github.com/TimeXt/FluentTimeSpan-CSharp/</RepositoryUrl>
-    <PackageReleaseNotes>0.3.0:
+    <RepositoryUrl>https://github.com/conplementAG/FluentTimeSpan/</RepositoryUrl>
+    <PackageReleaseNotes>0.3.1:
+-  transferred to conplementAG
+
+0.3.0:
 - back to .Net Standard 2.0
 - changed naming to FluentTimeSpan
 
