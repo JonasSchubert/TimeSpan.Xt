@@ -44,4 +44,4 @@ var oneWeekAgo = DateTime.Now - 1.Weeks();
 
 ## License
 
-FluentTimeSpan-C# is distributed under the MIT license. [See LICENSE](https://github.com/conplementAG/FluentTimeSpan/blob/develop/LICENSE.md) for details.
+FluentTimeSpan is distributed under the MIT license. [See LICENSE](https://github.com/conplementAG/FluentTimeSpan/blob/develop/LICENSE.md) for details.
