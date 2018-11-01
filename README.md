@@ -1,12 +1,10 @@
-# FluentTimeSpan-C# - develop branch
+# FluentTimeSpan - develop branch
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Nuget](https://img.shields.io/badge/nuget-blue.svg)](https://www.nuget.org/packages/FluentTimeSpan/)
 
-[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/FluentTimeSpan-CSharp/blob/develop/releases/0.3.0.181031/)
-[![Version](https://img.shields.io/badge/version-v0.3.0.181031-blue.svg)](https://github.com/TimeXt/FluentTimeSpan-CSharp/tree/develop/releases/0.3.0.181031/)
-
-[![PayPal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps/)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/FluentTimeSpan/blob/develop/releases/0.3.0.181031/)
+[![Version](https://img.shields.io/badge/version-v0.3.0.181031-blue.svg)](https://github.com/TimeXt/FluentTimeSpan/tree/develop/releases/0.3.0.181031/)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
@@ -50,4 +48,4 @@ var oneWeekAgo = DateTime.Now - 1.Weeks();
 
 ## License
 
-FluentTimeSpan-C# is distributed under the MIT license. [See LICENSE](https://github.com/TimeXt/FluentTimeSpan-CSharp/blob/develop/LICENSE.md) for details.
+FluentTimeSpan-C# is distributed under the MIT license. [See LICENSE](https://github.com/TimeXt/FluentTimeSpan/blob/develop/LICENSE.md) for details.
