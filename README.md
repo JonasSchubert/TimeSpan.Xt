@@ -6,8 +6,6 @@
 [![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/TimeXt/FluentTimeSpan/blob/master/releases/0.3.0.181031/)
 [![Version](https://img.shields.io/badge/version-v0.3.0.181031-blue.svg)](https://github.com/TimeXt/FluentTimeSpan/tree/master/releases/0.3.0.181031/)
 
-[![PayPal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps/)
-
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
 This .NET Standard 2.0 library shall help to reduce code like
