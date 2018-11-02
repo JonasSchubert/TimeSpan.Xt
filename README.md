@@ -4,7 +4,7 @@
 [![Nuget](https://img.shields.io/badge/nuget-blue.svg)](https://www.nuget.org/packages/FluentTimeSpan/)
 
 [![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/conplementAG/FluentTimeSpan/blob/master/releases/0.3.1.181101/)
-[![Version](https://img.shields.io/badge/version-v0.3.1.181101-blue.svg)](https://github.com/conplementAG/FluentTimeSpan/tree/master/releases/0.3.0.181101/)
+[![Version](https://img.shields.io/badge/version-v0.3.1.181101-blue.svg)](https://github.com/conplementAG/FluentTimeSpan/tree/master/releases/0.3.1.181101/)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
