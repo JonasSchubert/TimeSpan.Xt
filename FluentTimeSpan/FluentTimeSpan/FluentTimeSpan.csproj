@@ -22,9 +22,16 @@
 - Moved to .NET Core
 - pure TimeSpan and number extensions
 - new TimeSpan TimeValue Week</PackageReleaseNotes>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>FluentTimeSpan.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+
+  <Choose>  
+    <When Condition=" '$(Configuration)'=='Release' ">
+      <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>FluentTimeSpan.pfx</AssemblyOriginatorKeyFile>
+      </PropertyGroup>
+    </When>
+  </Choose>
 
 </Project>
