@@ -1,5 +1,6 @@
 ﻿using FluentAssertions;
 using System;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace FluentTimeSpan.Test
@@ -108,6 +109,13 @@ namespace FluentTimeSpan.Test
             (testDateTime - 15.25.Minutes()).Should().Be(new DateTime(2018, 10, 24, 18, 8, 15, 500));
             (testDateTime + 45.75.Seconds()).Should().Be(new DateTime(2018, 10, 24, 18, 24, 16, 250));
             (testDateTime - 15500.Milliseconds()).Should().Be(new DateTime(2018, 10, 24, 18, 23, 15, 0));
+        }
+
+        [Fact]
+        public void ShouldBeInterchangableWithTimeSpan()
+        {
+            1.Weeks().Should().Be(TimeSpan.FromDays(7));
+            (1.Weeks() + TimeSpan.FromDays(1)).Should().Be(TimeSpan.FromDays(8));
         }
     }
 }
