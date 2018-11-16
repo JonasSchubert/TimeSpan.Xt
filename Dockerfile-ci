@@ -1,0 +1,14 @@
+FROM microsoft/dotnet:2.1-sdk
+WORKDIR /src
+
+COPY FluentTimeSpan/FluentTimeSpan.sln ./
+COPY FluentTimeSpan/FluentTimeSpan/*.csproj ./FluentTimeSpan/
+COPY FluentTimeSpan/FluentTimeSpan.Test/*.csproj ./FluentTimeSpan.Test/
+
+RUN dotnet restore
+
+COPY . .
+WORKDIR /src/FluentTimeSpan/FluentTimeSpan.Test
+
+RUN dotnet build
+RUN dotnet test
