@@ -1,10 +1,10 @@
-# FluentTimeSpan - master branch
+# FluentTimeSpan
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Nuget](https://img.shields.io/badge/nuget-blue.svg)](https://www.nuget.org/packages/FluentTimeSpan/)
 
-[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/conplementAG/FluentTimeSpan/blob/master/releases/0.3.1.181101/)
-[![Version](https://img.shields.io/badge/version-v0.3.1.181101-blue.svg)](https://github.com/conplementAG/FluentTimeSpan/tree/master/releases/0.3.1.181101/)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](releases/0.3.1.181101/)
+[![Version](https://img.shields.io/badge/version-v0.3.1.181101-blue.svg)](releases/0.3.1.181101/)
 
 [![CI Status](https://cpgithub.visualstudio.com/GitHubPipelines/_apis/build/status/conplementAG.FluentTimeSpan)](https://cpgithub.visualstudio.com/GitHubPipelines/_build/latest?definitionId=5)
 
@@ -52,4 +52,4 @@ Task.Delay(5.Seconds())
 
 ## License
 
-FluentTimeSpan is distributed under the MIT license. [See LICENSE](https://github.com/conplementAG/FluentTimeSpan/blob/master/LICENSE.md) for details.
+FluentTimeSpan is distributed under the MIT license. [See LICENSE](LICENSE.md) for details.
