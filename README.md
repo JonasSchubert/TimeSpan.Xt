@@ -41,8 +41,14 @@ var division = 2.Minutes() / 2;
 var inFiveDays = DateTime.Now + 5.Days();
 var yesterday = DateTime.Now - 24.Hours();
 var oneWeekAgo = DateTime.Now - 1.Weeks();
-
 ```
+
+Since FluentTimeSpan is directly interchangable with TimeSpan, it can be used in all places where you would normally use TimeSpan, e.g.
+
+```C#
+Task.Delay(5.Seconds())
+```
+
 
 ## License
 
