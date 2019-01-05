@@ -4,7 +4,7 @@
 [![Nuget](https://img.shields.io/badge/nuget-blue.svg)](https://www.nuget.org/packages/FluentTimeSpan/)
 
 [![Build](https://img.shields.io/badge/build-success-green.svg)](releases/0.3.1.181101/)
-[![Version](https://img.shields.io/badge/version-v0.3.1.181101-blue.svg)](releases/0.3.1.181101/)
+[![Version](https://img.shields.io/badge/version-v0.3.1.181101-blue.svg)](https://github.com/conplementAG/FluentTimeSpan/releases/tag/v0.3.1)
 
 [![CI Status](https://cpgithub.visualstudio.com/GitHubPipelines/_apis/build/status/conplementAG.FluentTimeSpan)](https://cpgithub.visualstudio.com/GitHubPipelines/_build/latest?definitionId=5)
 
@@ -48,7 +48,6 @@ Since FluentTimeSpan is directly interchangable with TimeSpan, it can be used in
 ```C#
 Task.Delay(5.Seconds())
 ```
-
 
 ## License
 
