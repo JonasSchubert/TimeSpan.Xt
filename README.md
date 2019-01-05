@@ -3,8 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Nuget](https://img.shields.io/badge/nuget-blue.svg)](https://www.nuget.org/packages/FluentTimeSpan/)
 
-[![Build](https://img.shields.io/badge/build-success-green.svg)](https://github.com/conplementAG/FluentTimeSpan/blob/develop/releases/0.3.1.181101/)
-[![Version](https://img.shields.io/badge/version-v0.3.1.181101-blue.svg)](https://github.com/conplementAG/FluentTimeSpan/tree/develop/releases/0.3.1.181101/)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](releases/0.3.1.181101/)
+[![Version](https://img.shields.io/badge/version-v0.3.1.181101-blue.svg)](https://github.com/conplementAG/FluentTimeSpan/releases/tag/v0.3.1)
+
+[![CI Status](https://cpgithub.visualstudio.com/GitHubPipelines/_apis/build/status/conplementAG.FluentTimeSpan)](https://cpgithub.visualstudio.com/GitHubPipelines/_build/latest?definitionId=5)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
@@ -39,9 +41,15 @@ var division = 2.Minutes() / 2;
 var inFiveDays = DateTime.Now + 5.Days();
 var yesterday = DateTime.Now - 24.Hours();
 var oneWeekAgo = DateTime.Now - 1.Weeks();
-
 ```
+
+Since FluentTimeSpan is directly interchangable with TimeSpan, it can be used in all places where you would normally use TimeSpan, e.g.
+
+```C#
+Task.Delay(5.Seconds())
+```
+
 
 ## License
 
-FluentTimeSpan is distributed under the MIT license. [See LICENSE](https://github.com/conplementAG/FluentTimeSpan/blob/develop/LICENSE.md) for details.
+FluentTimeSpan is distributed under the MIT license. [See LICENSE](LICENSE.md) for details.
