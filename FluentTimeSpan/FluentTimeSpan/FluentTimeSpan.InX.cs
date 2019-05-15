@@ -4,6 +4,11 @@ namespace FluentTimeSpan
 {
     public static partial class FluentTimeSpan
     {
+        public static double InYears(this TimeSpan timeSpan)
+        {
+            return timeSpan.Ticks / TicksPerYear;
+        }
+
         public static double InWeeks(this TimeSpan timeSpan)
         {
             return timeSpan.Ticks / TicksPerWeek;
