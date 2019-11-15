@@ -50,6 +50,12 @@ Since FluentTimeSpan is directly interchangable with TimeSpan, it can be used in
 Task.Delay(5.Seconds())
 ```
 
+## Contributors
+
+| [<img alt="JonasSchubert" src="https://avatars0.githubusercontent.com/u/21952813?v=4&s=117" width="117"/>](https://github.com/JonasSchubert) | [<img alt="DenisBiondic" src="https://avatars1.githubusercontent.com/u/3341262?v=4&s=117" width="117"/>](https://github.com/DenisBiondic) 
+| :---------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
+| [Jonas Schubert](https://github.com/JonasSchubert) | [Denis Biondic](https://github.com/DenisBiondic) |
+
 ## License
 
 FluentTimeSpan is distributed under the MIT license. [See LICENSE](LICENSE.md) for details.
