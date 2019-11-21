@@ -4,8 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-[![Build](https://img.shields.io/badge/build-success-green.svg)](releases/0.4.0.190515/)
-[![Version](https://img.shields.io/badge/version-v0.4.0.190515-blue.svg)](https://github.com/TimeXt/FluentTimeSpan/releases/tag/0.4.0)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](releases/0.4.2.191121/)
+[![Version](https://img.shields.io/badge/version-v0.4.2.191121-blue.svg)](https://github.com/TimeXt/FluentTimeSpan/releases/tag/0.4.2)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
@@ -22,9 +22,12 @@ var oneWeekAgo = DateTime.Now - TimeSpan.FromDays(7);
 ```C#
 using FluentTimeSpan;
 
-var fiveCenturies = 5.Centuries();
-var tenDecades = 10.0.Decades();
-var twoYears = 2.Years();
+var fiveCenturies = 5.Centuries();				// uses precise calculation: 		1 Century == 36500 days
+var fiveCenturiesAccumulated = 5.Centuries(true);		// uses accumulated calculation: 	1 Century == 36525 days
+var tenDecades = 10.0.Decades();				// uses precise calculation: 		1 Decade == 3650 days
+var tenDecadesAccumulated = 10.0.Decades(true);			// uses accumulated calculation: 	1 Decade == 3652.5 days
+var twoYears = 2.Years();					// uses precise calculation: 		1 Year == 365 days
+var twoYearsAccumulated = 2.Years(true);			// uses accumulated calculation: 	1 Year == 365.25 days
 var oneWeek = 1.Weeks();
 var threeDays = 3.Days();
 var elevenHours = 11.Hours();
