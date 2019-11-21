@@ -4,11 +4,11 @@ namespace FluentTimeSpan
 {
     public static partial class FluentTimeSpan
     {
-        public static double InCenturies(this TimeSpan timeSpan) => (double)timeSpan.Ticks / TicksPerCentury;
+        public static double InCenturies(this TimeSpan timeSpan, bool accumulated = false) => (double)timeSpan.Ticks / (accumulated ? TicksPerCenturyAccumulated : TicksPerCentury);
 
-        public static double InDecades(this TimeSpan timeSpan) => (double)timeSpan.Ticks / TicksPerDecade;
+        public static double InDecades(this TimeSpan timeSpan, bool accumulated = false) => (double)timeSpan.Ticks / (accumulated ? TicksPerDecadeAccumulated : TicksPerDecade);
 
-        public static double InYears(this TimeSpan timeSpan) => (double)timeSpan.Ticks / TicksPerYear;
+        public static double InYears(this TimeSpan timeSpan, bool accumulated = false) => (double)timeSpan.Ticks / (accumulated ? TicksPerYearAccumulated : TicksPerYear);
 
         public static double InWeeks(this TimeSpan timeSpan) => (double)timeSpan.Ticks / TicksPerWeek;
 

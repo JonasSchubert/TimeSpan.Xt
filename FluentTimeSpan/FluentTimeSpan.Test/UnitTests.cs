@@ -9,20 +9,35 @@ namespace FluentTimeSpan.Test
         [Fact]
         public void AllComparisonsWorkShouldWorkAsExpected()
         {
-            3.Centuries().Should().Be(109575.Days());
+            3.Centuries(true).Should().Be(109575.Days());
+            3.Centuries(true).Should().NotBe(109574.Days());
+            3.Centuries(true).Should().BeGreaterThan(109574.99.Days());
+            3.Centuries(true).Should().BeLessThan(109575.01.Days());
+
+            3.Centuries().Should().Be(109500.00.Days());
             3.Centuries().Should().NotBe(109499.Days());
             3.Centuries().Should().BeGreaterThan(109499.99.Days());
-            3.Centuries().Should().BeLessThan(109575.01.Days());
+            3.Centuries().Should().BeLessThan(109500.01.Days());
 
-            3.Decades().Should().Be(10957.5.Days());
-            3.Decades().Should().NotBe(10949.Days());
-            3.Decades().Should().BeGreaterThan(10957.49.Days());
-            3.Decades().Should().BeLessThan(10957.51.Days());
+            3.Decades(true).Should().Be(10957.5.Days());
+            3.Decades(true).Should().NotBe(10957.4.Days());
+            3.Decades(true).Should().BeGreaterThan(10957.49.Days());
+            3.Decades(true).Should().BeLessThan(10957.51.Days());
 
-            3.Years().Should().Be(1095.75.Days());
-            3.Years().Should().NotBe(1094.Days());
-            3.Years().Should().BeGreaterThan(1095.74.Days());
-            3.Years().Should().BeLessThan(1095.76.Days());
+            3.Decades().Should().Be(10950.00.Days());
+            3.Decades().Should().NotBe(10949.00.Days());
+            3.Decades().Should().BeGreaterThan(10949.99.Days());
+            3.Decades().Should().BeLessThan(10950.01.Days());
+
+            3.Years(true).Should().Be(1095.75.Days());
+            3.Years(true).Should().NotBe(1094.75.Days());
+            3.Years(true).Should().BeGreaterThan(1095.74.Days());
+            3.Years(true).Should().BeLessThan(1095.76.Days());
+
+            3.Years().Should().Be(1095.00.Days());
+            3.Years().Should().NotBe(1094.00.Days());
+            3.Years().Should().BeGreaterThan(1094.99.Days());
+            3.Years().Should().BeLessThan(1095.01.Days());
 
             2.Weeks().Should().Be(14.Days());
             2.Weeks().Should().NotBe(13.Days());
@@ -55,7 +70,8 @@ namespace FluentTimeSpan.Test
         {
             3.1.Centuries().InDecades().Should().Be(31);
             2.5.Decades().InYears().Should().Be(25);
-            2.5.Years().InDays().Should().Be(913.125);
+            375.Years().InCenturies().Should().Be(3.75);
+            2.5.Years().InDays().Should().Be(912.5);
             4.5.Weeks().InDays().Should().Be(31.5);
             10.5.Days().InWeeks().Should().Be(1.5);
             2.5.Days().InHours().Should().Be(60);
@@ -73,7 +89,7 @@ namespace FluentTimeSpan.Test
         {
             (3.Centuries() + 20.Decades()).Should().Be(5.Centuries());
             (3.Decades() + 20.Years()).Should().Be(5.Decades());
-            (1.Years() + 50.Weeks() + 15.Days() + 6.0.Hours()).Should().Be(2.Years());
+            (1.Years() + 50.Weeks() + 15.Days()).Should().Be(2.Years());
             (2.Weeks() + 7.Days()).Should().Be(3.Weeks());
             (2.5.Days() + 12.Hours()).Should().Be(3.Days());
             (2.25.Hours() + 45.Minutes()).Should().Be(3.Hours());
@@ -86,7 +102,7 @@ namespace FluentTimeSpan.Test
         {
             (3.Centuries() - 20.Decades()).Should().Be(1.Centuries());
             (3.Decades() - 20.Years()).Should().Be(1.Decades());
-            (2.Years() - 50.Weeks() - 15.Days() - 6.Hours()).Should().Be(1.Years());
+            (2.Years() - 50.Weeks() - 15.Days()).Should().Be(1.Years());
             (2.Weeks() - 7.Days()).Should().Be(1.Weeks());
             (2.5.Days() - 12.Hours()).Should().Be(2.Days());
             (2.25.Hours() - 15.Minutes()).Should().Be(2.Hours());
@@ -132,7 +148,7 @@ namespace FluentTimeSpan.Test
         {
             var testDateTime = new DateTime(2018, 10, 24, 18, 23, 30, 500);
 
-            (testDateTime + 1.Years()).Should().Be(new DateTime(2019, 10, 25, 0, 23, 30, 500));
+            (testDateTime + 1.Years()).Should().Be(new DateTime(2019, 10, 24, 18, 23, 30, 500));
             (testDateTime + 1.Weeks()).Should().Be(new DateTime(2018, 10, 31, 18, 23, 30, 500));
             (testDateTime - 24.Days()).Should().Be(new DateTime(2018, 9, 30, 18, 23, 30, 500));
             (testDateTime + 80.5.Hours()).Should().Be(new DateTime(2018, 10, 28, 2, 53, 30, 500));
