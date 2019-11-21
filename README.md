@@ -4,9 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-[![CI Status](https://cpgithub.visualstudio.com/GitHubPipelines/_apis/build/status/conplementAG.FluentTimeSpan)](https://cpgithub.visualstudio.com/GitHubPipelines/_build/latest?definitionId=5)
 [![Build](https://img.shields.io/badge/build-success-green.svg)](releases/0.4.0.190515/)
-[![Version](https://img.shields.io/badge/version-v0.4.0.190515-blue.svg)](https://github.com/conplementAG/FluentTimeSpan/releases/tag/0.4.0)
+[![Version](https://img.shields.io/badge/version-v0.4.0.190515-blue.svg)](https://github.com/TimeXt/FluentTimeSpan/releases/tag/0.4.0)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
@@ -23,6 +22,8 @@ var oneWeekAgo = DateTime.Now - TimeSpan.FromDays(7);
 ```C#
 using FluentTimeSpan;
 
+var fiveCenturies = 5.Centuries();
+var tenDecades = 10.0.Decades();
 var twoYears = 2.Years();
 var oneWeek = 1.Weeks();
 var threeDays = 3.Days();
@@ -63,7 +64,7 @@ FluentTimeSpan is distributed under the MIT license. [See LICENSE](LICENSE.md) f
 ```
 MIT License
 
-Copyright (c) 2018-2019 conplementAG
+Copyright (c) 2018-2019 JonasSchubert
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
