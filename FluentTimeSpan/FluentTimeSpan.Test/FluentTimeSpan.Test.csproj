@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
 
-    <Version>0.4.0</Version>
+    <Version>0.4.1</Version>
 
     <Authors>Jonas Schubert</Authors>
 
@@ -13,13 +13,13 @@
 
     <Description>Unit tests for FluentTimeSpan</Description>
 
-    <Copyright>GuepardoApps (Jonas Schubert)</Copyright>
+    <Copyright>Jonas Schubert</Copyright>
 
     <PackageLicenseUrl>https://github.com/conplementAG/FluentTimeSpan/blob/master/LICENSE.md</PackageLicenseUrl>
 
-    <PackageProjectUrl>https://github.com/conplementAG/</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/TimeXt/</PackageProjectUrl>
 
-    <RepositoryUrl>https://github.com/conplementAG/FluentTimeSpan/</RepositoryUrl>
+    <RepositoryUrl>https://github.com/TimeXt/FluentTimeSpan/</RepositoryUrl>
 
     <AssemblyVersion>0.4.0.0</AssemblyVersion>
 
@@ -29,8 +29,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentAssertions" Version="5.6.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.0" />
+    <PackageReference Include="FluentAssertions" Version="5.9.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
       <PrivateAssets>all</PrivateAssets>
