@@ -1,6 +1,7 @@
 /PublishProfiles
 .csproj.user
 .vs
+.vscode
 bin
 obj
 packages
