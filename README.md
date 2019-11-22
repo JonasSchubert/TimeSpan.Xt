@@ -4,15 +4,15 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-[![Build](https://img.shields.io/badge/build-success-green.svg)](releases/0.4.2.191121/)
-[![Version](https://img.shields.io/badge/version-v0.4.2.191121-blue.svg)](https://github.com/TimeXt/FluentTimeSpan/releases/tag/0.4.2)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](https://www.nuget.org/packages/FluentTimeSpan/)
+[![Version](https://img.shields.io/badge/version-0.5.0.191122-blue.svg)](https://github.com/TimeXt/FluentTimeSpan/releases/tag/0.5.0)
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
-This .NET Standard 2.0 library shall help to reduce code like
+This .NET Standard 2.1 library shall help to reduce code like
 
 ```C#
-var dayInMillis = 24 * 60 * 60 * 1000;					// Represent a day in milliSeconds
+var dayInMillis = 24 * 60 * 60 * 1000;				// Represent a day in milliseconds
 var inFiveDays = DateTime.Now + TimeSpan.FromDays(5);
 var oneWeekAgo = DateTime.Now - TimeSpan.FromDays(7);
 ```
@@ -27,16 +27,17 @@ var fiveCenturiesAccumulated = 5.Centuries(true);		// uses accumulated calculati
 var tenDecades = 10.0.Decades();				// uses precise calculation: 		1 Decade == 3650 days
 var tenDecadesAccumulated = 10.0.Decades(true);			// uses accumulated calculation: 	1 Decade == 3652.5 days
 var twoYears = 2.Years();					// uses precise calculation: 		1 Year == 365 days
-var twoYearsAccumulated = 2.Years(true);			// uses accumulated calculation: 	1 Year == 365.25 days
+var twoYearsAccumulated = 2.Years(true);		        // uses accumulated calculation: 	1 Year == 365.25 days
 var oneWeek = 1.Weeks();
 var threeDays = 3.Days();
 var elevenHours = 11.Hours();
 var sixMinutes = 6.Minutes();
 var fiftySeconds = 50.Seconds();
-var hundredMilliSeconds = 100.MilliSeconds();
+var hundredMilliSeconds = 100.Milliseconds();
 
-var oneDayInMillis = 1.Days().InMilliseconds();    		// Converts one day into milliseconds and returns the double value
-var twoWeeksInHours = 2.Weeks().InHours(); 		    	// Converts two weeks into hours and returns the double value
+var oneDayInMillis = 1.Days().InMilliseconds();    		// Converts one day into milliseconds and returns the double value => 86400000
+var twoWeeksInHours = 2.Weeks().InHours(); 		    	// Converts two weeks into hours and returns the double value => 336
+var thirtyFiveDaysInWeeks = 35.Days().InWeeks(); 		// Converts 35 days into weeks and returns the double value => 5
 
 var addition = 1.Days() + 12.Hours() + 30.Minutes();
 var difference = 34.Minutes() - 240.Seconds();

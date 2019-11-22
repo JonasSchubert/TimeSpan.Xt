@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <Version>0.4.2</Version>
+    <Version>0.5.0</Version>
     <Authors>Jonas Schubert</Authors>
     <Company></Company>
     <Description>Provides extensions for TimeSpan. Added new TimeValue Week, Year, Decade and Century.</Description>
@@ -11,7 +11,10 @@
     <PackageProjectUrl>https://github.com/TimeXt/</PackageProjectUrl>
     <PackageIconUrl></PackageIconUrl>
     <RepositoryUrl>https://github.com/TimeXt/FluentTimeSpan/</RepositoryUrl>
-    <PackageReleaseNotes>0.4.2:
+    <PackageReleaseNotes>0.5.0:
+- Release build
+
+0.4.2:
 - adds possibility to use exact or accumulated conversion for Years, Decades and Centuries
 
 0.4.1:
