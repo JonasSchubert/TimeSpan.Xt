@@ -11,6 +11,12 @@
   <a href="https://github.com/TimeXt/FluentTimeSpan/"><img src="https://img.shields.io/github/stars/TimeXt/FluentTimeSpan.svg"/></a>
 </p>
 
+<p align="center"><h6 style="text-align: center;">Support me</h6></p>
+
+<p align="center">
+  <a href="https://www.paypal.me/GuepardoApps"><img src="https://img.shields.io/badge/paypal-support-blue.svg"/></a>
+</p>
+
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
 This .NET Standard 2.1 library shall help to reduce code like
