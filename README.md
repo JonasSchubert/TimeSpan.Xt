@@ -1,11 +1,15 @@
-# FluentTimeSpan
+<h1 align="center">
+	<img width="90" src="logo.png" alt="timext">
+</h1>
 
-[![Nuget](https://img.shields.io/badge/nuget-0.5.0-blue.svg)](https://www.nuget.org/packages/FluentTimeSpan/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+<p align="center"><h1 style="text-align: center;">FluentTimeSpan</h1></p>
 
-[![Build](https://img.shields.io/badge/build-success-green.svg)](https://www.nuget.org/packages/FluentTimeSpan/)
-[![Version](https://img.shields.io/badge/version-0.5.0.191122-blue.svg)](https://github.com/TimeXt/FluentTimeSpan/releases/tag/0.5.0)
+<p align="center">
+  <a href="https://www.nuget.org/packages/FluentTimeSpan/"><img src="https://img.shields.io/badge/nuget-0.5.0-blue.svg"/></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"/></a>
+  <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
+  <a href="https://github.com/TimeXt/FluentTimeSpan/"><img src="https://img.shields.io/github/stars/TimeXt/FluentTimeSpan.svg"/></a>
+</p>
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
