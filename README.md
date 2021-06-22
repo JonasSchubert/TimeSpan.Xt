@@ -5,7 +5,7 @@
 <p align="center"><h1 style="text-align: center;">FluentTimeSpan</h1></p>
 
 <p align="center">
-  <a href="https://www.nuget.org/packages/FluentTimeSpan/"><img src="https://img.shields.io/badge/nuget-0.5.0-blue.svg"/></a>
+  <a href="https://www.nuget.org/packages/FluentTimeSpan/"><img src="https://img.shields.io/badge/nuget-0.6.0-blue.svg"/></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"/></a>
   <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
   <a href="https://github.com/TimeXt/FluentTimeSpan/"><img src="https://img.shields.io/github/stars/TimeXt/FluentTimeSpan.svg"/></a>
@@ -19,7 +19,7 @@
 
 First of all many thanks to [Kizitonwose](https://github.com/kizitonwose/Time) for the original idea and already awesome library!
 
-This .NET Standard 2.1 library shall help to reduce code like
+This .NET Standard 2.0 library shall help to reduce code like
 
 ```C#
 var dayInMillis = 24 * 60 * 60 * 1000;				// Represent a day in milliseconds
@@ -78,7 +78,7 @@ FluentTimeSpan is distributed under the MIT license. [See LICENSE](LICENSE.md) f
 ```
 MIT License
 
-Copyright (c) 2018-2020 JonasSchubert
+Copyright (c) 2018-2021 JonasSchubert
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
