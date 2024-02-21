@@ -1,0 +1,29 @@
+# Inspired by https://www.jamescroft.co.uk/how-to-build-publish-nuget-packages-with-github-actions/
+name: Publish
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: | 
+          8.0.x
+    - name: Restore
+      run: dotnet restore
+    - name: Build Release
+      run: dotnet build -tl -c Release
+    - name: Pack
+      run: dotnet pack --configuration Release
+    - name: Publish Nuget Package
+      run: dotnet nuget push **/*.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source 'https://api.nuget.org/v3/index.json'

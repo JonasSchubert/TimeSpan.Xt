@@ -1,0 +1,14 @@
+﻿<Project>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup>
+      <AnalysisLevel>latest-All</AnalysisLevel>
+      <ErrorLog>codeanalzsis.sarif.json</ErrorLog>
+      <AnalysisLevel>preview-recommended</AnalysisLevel>
+      <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+      <AnalysisMode>All</AnalysisMode>
+  </PropertyGroup>
+</Project>

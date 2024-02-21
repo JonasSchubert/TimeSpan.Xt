@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "formulahendry.dotnet-test-explorer",
+    "k--kato.docomment",
+    "ms-dotnettools.csharp",
+    "ryanluker.vscode-coverage-gutters"
+  ]
+}

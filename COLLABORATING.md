@@ -4,7 +4,7 @@
 
 ## Responsibilities of a collaborator
 
-As a member of the team that manages **FluentTimeSpan**, you have the following responsibilities:
+As a member of the team that manages **TimeSpan.Xt**, you have the following responsibilities:
 
 - **Be part of the conversation in the issue tracker.** That includes (but is not limited to) helping out new members, discussing new features and explaining decisions to people.
 - **Review pull requests.** You do not have to read through all of the pull requests and review them, but taking the time each day to review a few can help a great deal.

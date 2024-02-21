@@ -1,0 +1,43 @@
+{
+  "name": "timespan.xt",
+  "version": "0.6.0",
+  "description": "Nuget package for fluent timespan usage.",
+  "author": {
+    "name": "Jonas Schubert",
+    "url": "https://github.com/JonasSchubert/",
+    "email": "jonas.schubert.projects@web.de"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonasSchubert/TimeSpan.Xt.git"
+  },
+  "scripts": {
+    "build:prod": "dotnet clean && dotnet build -tl && dotnet publish src/TimeSpan.Xt.csproj -c Release -f net8.0",
+    "format": "dotnet format ./TimeSpan.Xt.sln",
+    "pack": "dotnet pack --configuration Release",
+    "prepare": "is-ci || husky",
+    "pre-push": "npm run tool:restore && npm run build:prod && npm run test:unit && npm run test:quality",
+    "test:quality": "dotnet tool run roslynator analyze -o ./roslynator.yml --severity-level hidden",
+    "test:unit": "dotnet test TimeSpan.Xt.sln --collect:\"XPlat Code Coverage\" --logger:\"junit;LogFilePath=../junit/junit-test-result.xml\" && dotnet tool run reportgenerator -reports:\"**/*/coverage.cobertura.xml\" -targetdir:\"coverage\" -reporttypes:\"Cobertura;HtmlInline\"",
+    "tool:restore": "dotnet tool restore",
+    "update:npm": "npm update",
+    "update:nuget": "dotnet tool run dotnet-outdated -u"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
+    "commitlint-presets": "^1.0.4",
+    "husky": "^9.0.11",
+    "is-ci": "^3.0.1"
+  },
+  "commitlint": {
+    "extends": [
+      "./node_modules/commitlint-presets/index.js"
+    ]
+  },
+  "release": {
+    "extends": "semantic-release-presets/presets/github/.releaserc.main-nuget.json"
+  }
+}
