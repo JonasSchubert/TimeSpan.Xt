@@ -1,3 +1,11 @@
+## [0.5.2](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.5.1...v0.5.2) (2024-12-09)
+
+
+### Bug Fixes
+
+* **dotnet:** set global.json to 9.0.101 ([7112155](https://github.com/JonasSchubert/TimeSpan.Xt/commit/7112155b194540db9a5c72bf0239e9611541fa9b))
+* **project:** add no warn for NU5128 ([b86260b](https://github.com/JonasSchubert/TimeSpan.Xt/commit/b86260bcb6917ea3e511bd3b14bdd54ce055417b))
+
 ## [0.5.1](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.5.0...v0.5.1) (2024-12-09)
 
 
