@@ -70,12 +70,12 @@ Task.Delay(5.Seconds())
 
 ## License
 
-TimeSpan.Xt is distributed under the MIT license. [See LICENSE](LICENSE.md) for details.
+`TimeSpan.Xt` is distributed under the MIT license. [See LICENSE](LICENSE.md) for details.
 
 ```
 MIT License
 
-Copyright (c) 2018-2024 JonasSchubert
+Copyright (c) 2018-today JonasSchubert
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
