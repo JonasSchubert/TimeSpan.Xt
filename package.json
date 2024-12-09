@@ -1,6 +1,6 @@
 {
   "name": "timespan.xt",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Nuget package for fluent timespan usage.",
   "author": {
     "name": "Jonas Schubert",
