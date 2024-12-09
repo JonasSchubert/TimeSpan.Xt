@@ -23,7 +23,8 @@
     "test:unit": "dotnet test TimeSpan.Xt.sln --collect:\"XPlat Code Coverage\" --logger:\"junit;LogFilePath=../junit/junit-test-result.xml\" && dotnet tool run reportgenerator -reports:\"**/*/coverage.cobertura.xml\" -targetdir:\"coverage\" -reporttypes:\"Cobertura;HtmlInline\"",
     "tool:restore": "dotnet tool restore",
     "update:npm": "npm update",
-    "update:nuget": "dotnet tool run dotnet-outdated -u"
+    "update:nuget": "dotnet tool run dotnet-outdated -u",
+    "update:tools": "dotnet tool update --all"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
