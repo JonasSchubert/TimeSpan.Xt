@@ -4,4 +4,5 @@ root = false
 [*.{cs,vb}]
 dotnet_diagnostic.CS1591.severity = none
 dotnet_diagnostic.IDE0055.severity = none
+dotnet_diagnostic.IDE0058.severity = none
 dotnet_diagnostic.IDE0130.severity = none
