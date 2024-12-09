@@ -31,7 +31,10 @@ namespace TimeSpanXt
     /// <param name="value">The sbyte years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(sbyte value, bool accumulated = false) => new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    public static TimeSpan FromYears(sbyte value, bool accumulated = false)
+    {
+      return new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    }
 
     /// <summary>
     /// Converts a byte value representing years into a Timespan.
@@ -39,7 +42,10 @@ namespace TimeSpanXt
     /// <param name="value">The byte years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(byte value, bool accumulated = false) => new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    public static TimeSpan FromYears(byte value, bool accumulated = false)
+    {
+      return new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    }
 
     /// <summary>
     /// Converts a decimal value representing years into a Timespan.
@@ -47,7 +53,10 @@ namespace TimeSpanXt
     /// <param name="value">The decimal years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(decimal value, bool accumulated = false) => new TimeSpan((long)((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value));
+    public static TimeSpan FromYears(decimal value, bool accumulated = false)
+    {
+      return new TimeSpan((long)((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value));
+    }
 
     /// <summary>
     /// Converts a double value representing years into a Timespan.
@@ -55,7 +64,10 @@ namespace TimeSpanXt
     /// <param name="value">The double years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(double value, bool accumulated = false) => new TimeSpan((long)((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value));
+    public static TimeSpan FromYears(double value, bool accumulated = false)
+    {
+      return new TimeSpan((long)((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value));
+    }
 
     /// <summary>
     /// Converts a float value representing years into a Timespan.
@@ -63,7 +75,10 @@ namespace TimeSpanXt
     /// <param name="value">The float years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(float value, bool accumulated = false) => new TimeSpan((long)((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value));
+    public static TimeSpan FromYears(float value, bool accumulated = false)
+    {
+      return new TimeSpan((long)((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value));
+    }
 
     /// <summary>
     /// Converts a int value representing years into a Timespan.
@@ -71,7 +86,10 @@ namespace TimeSpanXt
     /// <param name="value">The int years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(int value, bool accumulated = false) => new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    public static TimeSpan FromYears(int value, bool accumulated = false)
+    {
+      return new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    }
 
     /// <summary>
     /// Converts a long value representing years into a Timespan.
@@ -79,7 +97,10 @@ namespace TimeSpanXt
     /// <param name="value">The long years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(long value, bool accumulated = false) => new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    public static TimeSpan FromYears(long value, bool accumulated = false)
+    {
+      return new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    }
 
     /// <summary>
     /// Converts a short value representing years into a Timespan.
@@ -87,7 +108,10 @@ namespace TimeSpanXt
     /// <param name="value">The short years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(short value, bool accumulated = false) => new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    public static TimeSpan FromYears(short value, bool accumulated = false)
+    {
+      return new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    }
 
     /// <summary>
     /// Converts a uint value representing years into a Timespan.
@@ -95,7 +119,10 @@ namespace TimeSpanXt
     /// <param name="value">The uint years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(uint value, bool accumulated = false) => new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    public static TimeSpan FromYears(uint value, bool accumulated = false)
+    {
+      return new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    }
 
     /// <summary>
     /// Converts a ulong value representing years into a Timespan.
@@ -103,7 +130,10 @@ namespace TimeSpanXt
     /// <param name="value">The ulong years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(ulong value, bool accumulated = false) => new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * (long)value);
+    public static TimeSpan FromYears(ulong value, bool accumulated = false)
+    {
+      return new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * (long)value);
+    }
 
     /// <summary>
     /// Converts a ushort value representing years into a Timespan.
@@ -111,6 +141,9 @@ namespace TimeSpanXt
     /// <param name="value">The ushort years value.</param>
     /// <param name="accumulated">If set to true, returns the accumulated value. Accumulated values include leap years.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan FromYears(ushort value, bool accumulated = false) => new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    public static TimeSpan FromYears(ushort value, bool accumulated = false)
+    {
+      return new TimeSpan((accumulated ? TicksPerYearAccumulated : TicksPerYear) * value);
+    }
   }
 }

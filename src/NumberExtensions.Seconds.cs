@@ -19,76 +19,109 @@ namespace TimeSpanXt
     /// </summary>
     /// <param name="value">The sbyte seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this sbyte value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this sbyte value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The byte seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this byte value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this byte value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The decimal seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this decimal value) => TimeSpan.FromSeconds((double)value);
+    public static TimeSpan Seconds(this decimal value)
+    {
+      return TimeSpan.FromSeconds((double)value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The double seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this double value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this double value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The float seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this float value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this float value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The int seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this int value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this int value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The long seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this long value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this long value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The short seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this short value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this short value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The uint seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this uint value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this uint value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The ulong seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this ulong value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this ulong value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
 
     /// <summary>
     /// Returns the TimeSpan value in seconds for a value.
     /// </summary>
     /// <param name="value">The ushort seconds value.</param>
     /// <returns>The Timespan.</returns>
-    public static TimeSpan Seconds(this ushort value) => TimeSpan.FromSeconds(value);
+    public static TimeSpan Seconds(this ushort value)
+    {
+      return TimeSpan.FromSeconds(value);
+    }
   }
 }
