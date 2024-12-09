@@ -14,7 +14,7 @@
     "url": "https://github.com/JonasSchubert/TimeSpan.Xt.git"
   },
   "scripts": {
-    "build:prod": "dotnet clean && dotnet build -tl && dotnet publish src/TimeSpan.Xt.csproj -c Release -f net8.0",
+    "build:prod": "dotnet clean && dotnet build -tl && dotnet publish src/TimeSpan.Xt.csproj -c Release -f net9.0",
     "format": "dotnet format ./TimeSpan.Xt.sln",
     "pack": "dotnet pack --configuration Release",
     "prepare": "is-ci || husky",
