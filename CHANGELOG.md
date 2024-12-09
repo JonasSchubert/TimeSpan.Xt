@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.5.0...v0.5.1) (2024-12-09)
+
+
+### Bug Fixes
+
+* **project:** update script pack to trigger release ([5e814a5](https://github.com/JonasSchubert/TimeSpan.Xt/commit/5e814a5f7e74e10df6302d334f88718ca6589d8e))
+
 # [0.5.0](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.4.0...v0.5.0) (2024-12-09)
 
 
