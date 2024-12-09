@@ -24,6 +24,6 @@ jobs:
     - name: Build Release
       run: dotnet build -tl -c Release
     - name: Pack
-      run: dotnet pack --configuration Release
+      run: dotnet pack --configuration Release -p:TargetFrameworks=netstandard2.0 --no-restore
     - name: Publish Nuget Package
       run: dotnet nuget push **/*.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source 'https://api.nuget.org/v3/index.json'
