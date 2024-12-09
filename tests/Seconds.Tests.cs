@@ -1,16 +1,17 @@
 ﻿using FluentAssertions;
 using Xunit;
 
-namespace TimeSpanXt.Test;
-
-public class SecondsTests
+namespace TimeSpanXt.Test
 {
-  [Fact]
-  public void ComparisonsWorkShouldWorkAsExpected()
+  public class SecondsTests
   {
-    2.Seconds().Should().Be(2000.Milliseconds());
-    2.Seconds().Should().NotBe(1999.Milliseconds());
-    2.Seconds().Should().BeGreaterThan(1999.Milliseconds());
-    2.Seconds().Should().BeLessThan(2001.Milliseconds());
+    [Fact]
+    public void ComparisonsWorkShouldWorkAsExpected()
+    {
+      2.Seconds().Should().Be(2000.Milliseconds());
+      2.Seconds().Should().NotBe(1999.Milliseconds());
+      2.Seconds().Should().BeGreaterThan(1999.Milliseconds());
+      2.Seconds().Should().BeLessThan(2001.Milliseconds());
+    }
   }
 }
