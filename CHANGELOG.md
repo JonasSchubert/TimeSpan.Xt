@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.4.0...v0.5.0) (2024-12-09)
+
+
+### Features
+
+* **.net:** update to .net9.0 ([878d2cb](https://github.com/JonasSchubert/TimeSpan.Xt/commit/878d2cb420368427a97428b2b04535460157ce22))
+
 # [0.4.0](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.3.1...v0.4.0) (2024-02-21)
 
 
