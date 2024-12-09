@@ -16,7 +16,7 @@
   "scripts": {
     "build:prod": "dotnet clean && dotnet build -tl && dotnet publish src/TimeSpan.Xt.csproj -c Release -f net9.0",
     "format": "dotnet format ./TimeSpan.Xt.sln",
-    "pack": "dotnet pack --configuration Release",
+    "pack": "dotnet pack --configuration Release -p:TargetFrameworks=netstandard2.0 --no-restore",
     "prepare": "is-ci || husky",
     "pre-push": "npm run tool:restore && npm run build:prod && npm run test:unit && npm run test:quality",
     "test:quality": "dotnet tool run roslynator analyze -o ./roslynator.yml --severity-level hidden",
