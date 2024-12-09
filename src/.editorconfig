@@ -1,0 +1,5 @@
+root = false
+
+#### .NET Coding Conventions ####
+[*.{cs,vb}]
+dotnet_diagnostic.IDE0090.severity = none

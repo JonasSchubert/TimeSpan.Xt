@@ -2,8 +2,6 @@ root = false
 
 #### .NET Coding Conventions ####
 [*.{cs,vb}]
-dotnet_diagnostic.IDE0005.severity = none
+dotnet_diagnostic.CS1591.severity = none
 dotnet_diagnostic.IDE0055.severity = none
 dotnet_diagnostic.IDE0130.severity = none
-dotnet_diagnostic.IDE0160.severity = none
-dotnet_diagnostic.MA0048.severity = none
