@@ -1,3 +1,10 @@
+## [0.5.4](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.5.3...v0.5.4) (2025-03-26)
+
+
+### Bug Fixes
+
+* **deps:** bump versions ([c278042](https://github.com/JonasSchubert/TimeSpan.Xt/commit/c2780423bfab0eb8b9b3bb2587a4dd5c40b98ad3))
+
 ## [0.5.3](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.5.2...v0.5.3) (2024-12-09)
 
 
