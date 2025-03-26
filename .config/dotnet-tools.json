@@ -3,22 +3,25 @@
   "isRoot": true,
   "tools": {
     "dotnet-outdated-tool": {
-      "version": "4.6.7",
+      "version": "4.6.8",
       "commands": [
         "dotnet-outdated"
-      ]
+      ],
+      "rollForward": false
     },
     "dotnet-reportgenerator-globaltool": {
-      "version": "5.4.4",
+      "version": "5.4.5",
       "commands": [
         "reportgenerator"
-      ]
+      ],
+      "rollForward": false
     },
     "roslynator.dotnet.cli": {
       "version": "0.10.1",
       "commands": [
         "roslynator"
-      ]
+      ],
+      "rollForward": false
     }
   }
 }
