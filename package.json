@@ -27,9 +27,9 @@
     "update:tools": "dotnet tool update --all"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
-    "@commitlint/config-conventional": "^19.7.1",
-    "commitlint-presets": "^2.0.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "commitlint-presets": "^2.1.0",
     "husky": "^9.1.7",
     "is-ci": "^4.1.0"
   },
