@@ -17,7 +17,7 @@
       "rollForward": false
     },
     "roslynator.dotnet.cli": {
-      "version": "0.10.1",
+      "version": "0.10.2",
       "commands": [
         "roslynator"
       ],
