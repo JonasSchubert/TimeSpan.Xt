@@ -1,3 +1,15 @@
+# [0.6.0](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.5.4...v0.6.0) (2026-05-07)
+
+
+### Bug Fixes
+
+* **deps:** :arrow_up: bump versions, use AwesomeAssertions, bump to net10 ([17f9615](https://github.com/JonasSchubert/TimeSpan.Xt/commit/17f9615a7fba6b7632ecce5c46c47c9da7b2c801))
+
+
+### Features
+
+* **extensions:** :sparkles: add support for ticks ([7b46bc9](https://github.com/JonasSchubert/TimeSpan.Xt/commit/7b46bc9781bcf5eebc161cff52129fa6302ed46d))
+
 ## [0.5.4](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.5.3...v0.5.4) (2025-03-26)
 
 
