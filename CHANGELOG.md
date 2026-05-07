@@ -1,3 +1,10 @@
+## [0.6.1](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.6.0...v0.6.1) (2026-05-07)
+
+
+### Bug Fixes
+
+* **git:** :fire: remove pre hooks ([89111ed](https://github.com/JonasSchubert/TimeSpan.Xt/commit/89111ed100102a24a2468d82f80b1f4814456d1f))
+
 # [0.6.0](https://github.com/JonasSchubert/TimeSpan.Xt/compare/v0.5.4...v0.6.0) (2026-05-07)
 
 
