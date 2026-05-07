@@ -41,6 +41,7 @@ var elevenHours = 11.Hours();
 var sixMinutes = 6.Minutes();
 var fiftySeconds = 50.Seconds();
 var hundredMilliSeconds = 100.Milliseconds();
+var fiveTicks = 5.Ticks();
 
 var oneDayInMillis = 1.Days().InMilliseconds(); // Converts one day into milliseconds and returns the double value => 86400000
 var twoWeeksInHours = 2.Weeks().InHours(); // Converts two weeks into hours and returns the double value => 336
