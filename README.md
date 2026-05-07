@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img width="90" src="logo.png" alt="timext">
+ <img width="90" src="logo.png" alt="timext">
 </h1>
 
 <p align="center"><h1 style="text-align: center;">TimeSpan.Xt</h1></p>
@@ -19,7 +19,7 @@ dotnet add package TimeSpan.Xt
 ```
 
 ```C#
-var dayInMillis = 24 * 60 * 60 * 1000;				// Represent a day in milliseconds
+var dayInMillis = 24 * 60 * 60 * 1000;    // Represent a day in milliseconds
 var inFiveDays = DateTime.Now + TimeSpan.FromDays(5);
 var oneWeekAgo = DateTime.Now - TimeSpan.FromDays(7);
 ```
@@ -29,12 +29,12 @@ var oneWeekAgo = DateTime.Now - TimeSpan.FromDays(7);
 ```C#
 using TimeSpan.Xt;
 
-var fiveCenturies = 5.Centuries();				// uses precise calculation: 		1 Century == 36500 days
-var fiveCenturiesAccumulated = 5.Centuries(true);		// uses accumulated calculation: 	1 Century == 36525 days
-var tenDecades = 10.0.Decades();				// uses precise calculation: 		1 Decade == 3650 days
-var tenDecadesAccumulated = 10.0.Decades(true);			// uses accumulated calculation: 	1 Decade == 3652.5 days
-var twoYears = 2.Years();					// uses precise calculation: 		1 Year == 365 days
-var twoYearsAccumulated = 2.Years(true);		        // uses accumulated calculation: 	1 Year == 365.25 days
+var fiveCenturies = 5.Centuries(); // uses precise calculation: 1 Century == 36500 days
+var fiveCenturiesAccumulated = 5.Centuries(true); // uses accumulated calculation: 1 Century == 36525 days
+var tenDecades = 10.0.Decades(); // uses precise calculation: 1 Decade == 3650 days
+var tenDecadesAccumulated = 10.0.Decades(true); // uses accumulated calculation: 1 Decade == 3652.5 days
+var twoYears = 2.Years(); // uses precise calculation: 1 Year == 365 days
+var twoYearsAccumulated = 2.Years(true); // uses accumulated calculation: 1 Year == 365.25 days
 var oneWeek = 1.Weeks();
 var threeDays = 3.Days();
 var elevenHours = 11.Hours();
@@ -42,9 +42,9 @@ var sixMinutes = 6.Minutes();
 var fiftySeconds = 50.Seconds();
 var hundredMilliSeconds = 100.Milliseconds();
 
-var oneDayInMillis = 1.Days().InMilliseconds();    		// Converts one day into milliseconds and returns the double value => 86400000
-var twoWeeksInHours = 2.Weeks().InHours(); 		    	// Converts two weeks into hours and returns the double value => 336
-var thirtyFiveDaysInWeeks = 35.Days().InWeeks(); 		// Converts 35 days into weeks and returns the double value => 5
+var oneDayInMillis = 1.Days().InMilliseconds(); // Converts one day into milliseconds and returns the double value => 86400000
+var twoWeeksInHours = 2.Weeks().InHours(); // Converts two weeks into hours and returns the double value => 336
+var thirtyFiveDaysInWeeks = 35.Days().InWeeks(); // Converts 35 days into weeks and returns the double value => 5
 
 var addition = 1.Days() + 12.Hours() + 30.Minutes();
 var difference = 34.Minutes() - 240.Seconds();
@@ -64,7 +64,7 @@ Task.Delay(5.Seconds())
 
 ## Contributors
 
-| [<img alt="JonasSchubert" src="https://avatars0.githubusercontent.com/u/21952813?v=4&s=117" width="117"/>](https://github.com/JonasSchubert) | [<img alt="DenisBiondic" src="https://avatars1.githubusercontent.com/u/3341262?v=4&s=117" width="117"/>](https://github.com/DenisBiondic) 
+| [<img alt="JonasSchubert" src="https://avatars0.githubusercontent.com/u/21952813?v=4&s=117" width="117"/>](https://github.com/JonasSchubert) | [<img alt="DenisBiondic" src="https://avatars1.githubusercontent.com/u/3341262?v=4&s=117" width="117"/>](https://github.com/DenisBiondic)
 | :---------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
 | [Jonas Schubert](https://github.com/JonasSchubert) | [Denis Biondic](https://github.com/DenisBiondic) |
 
