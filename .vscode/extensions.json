@@ -1,9 +1,23 @@
 {
   "recommendations": [
+    "aaron-bond.better-comments",
+    "bierner.markdown-mermaid",
+    "codeandstuff.package-json-upgrade",
+    "davidanson.vscode-markdownlint",
+    "deerawan.vscode-faker",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
     "editorconfig.editorconfig",
     "formulahendry.dotnet-test-explorer",
+    "gruntfuggly.todo-tree",
     "k--kato.docomment",
+    "liamhammett.inline-parameters",
+    "mechatroner.rainbow-csv",
     "ms-dotnettools.csharp",
-    "ryanluker.vscode-coverage-gutters"
+    "ms-vsliveshare.vsliveshare",
+    "redhat.vscode-yaml",
+    "ryanluker.vscode-coverage-gutters",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-german"
   ]
 }

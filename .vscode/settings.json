@@ -1,0 +1,16 @@
+{
+  "cSpell.language": "de-de,en",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "Directory.Packages.props": "Directory.Build.props, TimeSpan.Xt.sln, global.json, nuget.config, .nuspec",
+    "README.md": "CODE_OF_CONDUCT.md, COLLABORATING.md, CONTRIBUTING.md, LICENSE.md",
+    "package.json": ".editorconfig, package-lock.json"
+  },
+  "editor.formatOnSave": false,
+  "markdownlint.config": {
+    "MD033": false
+  }
+}
