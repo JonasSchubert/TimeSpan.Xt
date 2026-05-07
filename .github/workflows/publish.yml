@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     tags:
-      - '*'
+      - "*"
   workflow_dispatch:
 
 permissions:
@@ -14,16 +14,18 @@ jobs:
     name: publish
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
-    - uses: actions/setup-dotnet@v5
-      with:
-        dotnet-version: | 
-          9.0.x
-    - name: Restore
-      run: dotnet restore
-    - name: Build Release
-      run: dotnet build -tl -c Release
-    - name: Pack
-      run: dotnet pack --configuration Release -p:TargetFrameworks=netstandard2.0 --no-restore
-    - name: Publish Nuget Package
-      run: dotnet nuget push **/*.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source 'https://api.nuget.org/v3/index.json'
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            10.0.x
+      - name: Restore
+        run: dotnet restore
+      - name: Build Release
+        run: dotnet build -tl -c Release
+      - name: Pack
+        run: dotnet pack --configuration Release -p:TargetFrameworks=netstandard2.0
+          --no-restore
+      - name: Publish Nuget Package
+        run: dotnet nuget push **/*.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source
+          'https://api.nuget.org/v3/index.json'

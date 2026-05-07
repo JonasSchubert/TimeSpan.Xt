@@ -14,7 +14,7 @@
     "url": "https://github.com/JonasSchubert/TimeSpan.Xt.git"
   },
   "scripts": {
-    "build:prod": "dotnet clean && dotnet build -tl && dotnet publish src/TimeSpan.Xt.csproj -c Release -f net9.0",
+    "build:prod": "dotnet clean && dotnet build -tl && dotnet publish src/TimeSpan.Xt.csproj -c Release -f net10.0",
     "format": "dotnet format ./TimeSpan.Xt.sln",
     "pack": "dotnet pack --configuration Release -p:TargetFrameworks=netstandard2.0 --no-restore",
     "prepare": "is-ci || husky",
@@ -27,8 +27,8 @@
     "update:tools": "dotnet tool update --all"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.2.0",
-    "@commitlint/config-conventional": "^20.2.0",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "commitlint-presets": "^2.2.0",
     "husky": "^9.1.7",
     "is-ci": "^4.1.0"

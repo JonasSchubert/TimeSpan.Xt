@@ -13,17 +13,17 @@ jobs:
     name: quality
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
-    - uses: actions/setup-dotnet@v5
-      with:
-        dotnet-version: | 
-          9.0.x
-    - name: Restore
-      run: dotnet restore
-    - name: Unit Tests
-      run: dotnet test
-    - name: Build Release
-      run: dotnet build -tl -c Release
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            10.0.x
+      - name: Restore
+        run: dotnet restore
+      - name: Unit Tests
+        run: dotnet test
+      - name: Build Release
+        run: dotnet build -tl -c Release
   release:
     needs: quality
     permissions:
@@ -40,7 +40,10 @@ jobs:
           cache: npm
           node-version: lts/*
       - run: npm ci
-      - run: npm install --no-save semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/github @semantic-release/npm @semantic-release/git semantic-release-replace-plugin semantic-release-presets
+      - run: npm install --no-save semantic-release @semantic-release/commit-analyzer
+          @semantic-release/release-notes-generator @semantic-release/changelog
+          @semantic-release/github @semantic-release/npm @semantic-release/git
+          semantic-release-replace-plugin semantic-release-presets
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
